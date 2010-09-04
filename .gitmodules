@@ -1,0 +1,24 @@
+[submodule "repos/xunit"]
+	path = repos/xunit
+	url = http://github.com/tabe/xunit.git
+[submodule "repos/smathml"]
+	path = repos/smathml
+	url = http://github.com/tabe/smathml.git
+[submodule "repos/sxml"]
+	path = repos/sxml
+	url = http://github.com/tabe/sxml.git
+[submodule "repos/lcs"]
+	path = repos/lcs
+	url = http://github.com/tabe/lcs.git
+[submodule "repos/surfage"]
+	path = repos/surfage
+	url = http://github.com/okuoku/surfage.git
+[submodule "repos/xitomatl"]
+	path = repos/xitomatl
+	url = http://github.com/okuoku/xitomatl.git
+[submodule "repos/dharmalab"]
+	path = repos/dharmalab
+	url = http://github.com/okuoku/dharmalab.git
+[submodule "repos/mpl"]
+	path = repos/mpl
+	url = http://github.com/dharmatech/mpl.git

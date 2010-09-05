@@ -25,3 +25,6 @@
 [submodule "repos/racket"]
 	path = repos/racket
 	url = http://github.com/plt/racket.git
+[submodule "repos/yuni"]
+	path = repos/yuni
+	url = http://github.com/okuoku/yuni-core.git

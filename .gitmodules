@@ -22,3 +22,6 @@
 [submodule "repos/mpl"]
 	path = repos/mpl
 	url = http://github.com/dharmatech/mpl.git
+[submodule "repos/racket"]
+	path = repos/racket
+	url = http://github.com/plt/racket.git

@@ -30,4 +30,4 @@
 	url = http://github.com/okuoku/yuni-core.git
 [submodule "repos/mosh"]
 	path = repos/mosh
-	url = http://github.com/higepon/mosh.git
+	url = http://github.com/okuoku/mosh.git

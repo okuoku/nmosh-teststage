@@ -35,6 +35,9 @@
 
 (trace "collecting libraries")
 
+;; remove current library collection
+(directory-walk "lib" delete-file)
+
 ;; add all library collection
 (for-each
   (^e
@@ -67,7 +70,6 @@
       (for-each (^e (append! libraries e)) bundle)))
   library-files)
 
-(trace "finish.")
 
 ;; calc desired library path
 
@@ -81,9 +83,7 @@
         (filter (^e 
                   (let ((body-name (path-sans-extension^2 (path-basename (~ e 'path))))
                         (lib-name (symbol->path (car (reverse (~ e 'name))))))
-                    (or (string=? body-name lib-name)
-                        (begin (trace "drop ~a = ~a" (~ e 'path) (~ e 'name))
-                               #f))))
+                    (string=? body-name lib-name)))
                 libraries)))
   (trace "~a target candidates" (length target-candidate))
   (for-all (^e 
@@ -115,7 +115,6 @@
   (let ((src (car c))
         (dst (cdr c)))
     (when (file-exists? dst)
-      (trace "remove ~a" dst)
       (delete-file dst))
     (with-output-to-file
       dst
@@ -124,5 +123,8 @@
                       (newline (current-output-port)))
                   (cons "#!r6rs" (file->string-list src)))))))
 
+(trace "creating target dirs")
 (for-each (^e (dig-target-dir (cdr e))) copytargets)
+(trace "copy and injecting #!r6rs")
 (for-each copy/add-header copytargets)
+(trace "done.")

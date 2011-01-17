@@ -31,3 +31,33 @@
 [submodule "repos/mosh"]
 	path = repos/mosh
 	url = http://github.com/okuoku/mosh.git
+[submodule "repos/industria"]
+	path = repos/industria
+	url = http://github.com/okuoku/industria.git
+[submodule "repos/spells"]
+	path = repos/spells
+	url = http://github.com/rotty/spells.git
+[submodule "repos/wak-common"]
+	path = repos/wak-common
+	url = git://gitorious.org/wak/wak-common.git
+[submodule "repos/wak-fmt"]
+	path = repos/wak-fmt
+	url = git://gitorious.org/wak/wak-fmt.git
+[submodule "repos/wak-foof-loop"]
+	path = repos/wak-foof-loop
+	url = git://gitorious.org/wak/wak-foof-loop.git
+[submodule "repos/wak-syn-param"]
+	path = repos/wak-syn-param
+	url = git://gitorious.org/wak/wak-syn-param.git
+[submodule "repos/wak-riastreams"]
+	path = repos/wak-riastreams
+	url = git://gitorious.org/wak/wak-riastreams.git
+[submodule "repos/wak-trc-testing"]
+	path = repos/wak-trc-testing
+	url = git://gitorious.org/wak/wak-trc-testing.git
+[submodule "repos/wak-ssax"]
+	path = repos/wak-ssax
+	url = git://gitorious.org/wak/wak-ssax.git
+[submodule "repos/wak-sxml-tools"]
+	path = repos/wak-sxml-tools
+	url = git://gitorious.org/wak/wak-sxml-tools.git

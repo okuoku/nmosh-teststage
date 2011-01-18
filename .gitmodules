@@ -61,3 +61,6 @@
 [submodule "repos/wak-sxml-tools"]
 	path = repos/wak-sxml-tools
 	url = git://gitorious.org/wak/wak-sxml-tools.git
+[submodule "repos/rl3"]
+	path = repos/rl3
+	url = http://github.com/RayRacine/rl3.git

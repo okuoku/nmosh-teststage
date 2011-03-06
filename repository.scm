@@ -10,7 +10,33 @@
   "repos/xunit/xunit.sls"
   "repos/yuni"
   "repos/racket/collects/tests/r6rs"
-  "repos/mosh/lib")
+  "repos/mosh/lib"
+  "repos/spells"
+  "repos/industria"
+  "repos/wak-common"
+  "repos/wak-fmt"
+  "repos/wak-foof-loop"
+  "repos/wak-riastreams"
+  "repos/wak-ssax"
+  "repos/wak-sxml-tools"
+  "repos/wak-syn-param"
+  "repos/wak-trc-testing"
+  "repos/wak-irregex"
+  "repos/wak-parscheme"
+  "repos/wak-prometheus"
+  )
+
+(resources
+  ("repos/wak-fmt/fmt/private" => (wak fmt private))
+  ("repos/wak-foof-loop/foof-loop/private" => (wak foof-loop private))
+  ("repos/wak-irregex/irregex/private" => (wak irregex private))
+  ("repos/wak-parscheme/parscheme/private" => (wak parscheme private))
+  ("repos/wak-prometheus/prometheus/private" => (wak prometheus private))
+  ("repos/wak-riastreams/riastreams/private" => (wak riastreams private))
+  ("repos/wak-ssax/ssax/private" => (wak ssax private))
+  ("repos/wak-syn-param/syn-param/private" => (wak syn-param private))
+  ("repos/wak-trc-testing/trc-testing/private" => (wak trc-testing private))
+  )
 
 (set dharmalab
      (basedir "repos/dharmalab/tests")

@@ -25,12 +25,6 @@
 [submodule "repos/racket"]
 	path = repos/racket
 	url = http://github.com/plt/racket.git
-[submodule "repos/yuni"]
-	path = repos/yuni
-	url = http://github.com/okuoku/yuni-core.git
-[submodule "repos/mosh"]
-	path = repos/mosh
-	url = http://github.com/okuoku/mosh.git
 [submodule "repos/industria"]
 	path = repos/industria
 	url = http://github.com/okuoku/industria.git
@@ -64,3 +58,12 @@
 [submodule "repos/rl3"]
 	path = repos/rl3
 	url = http://github.com/RayRacine/rl3.git
+[submodule "repos/wak-irregex"]
+	path = repos/wak-irregex
+	url = http://git.gitorious.org/wak/wak-irregex.git
+[submodule "repos/wak-parscheme"]
+	path = repos/wak-parscheme
+	url = http://git.gitorious.org/wak/wak-parscheme.git
+[submodule "repos/wak-prometheus"]
+	path = repos/wak-prometheus
+	url = http://git.gitorious.org/wak/wak-prometheus.git
